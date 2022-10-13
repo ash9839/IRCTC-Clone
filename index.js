@@ -631,6 +631,7 @@ const city_names =[
 
 
 ]
+/*
 let str="";
 // const sb1=document.querySelector('#searchbox1');
 searchbox1.addEventListener('input',function(){
@@ -648,3 +649,4 @@ searchbox1.addEventListener('input',function(){
         }
     }
 })
+*/
