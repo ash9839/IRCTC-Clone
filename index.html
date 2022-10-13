@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>IRCTC Next Generation eTicketing System</title>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/datepicker.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar flex justify-between  m-3">
+            <img class="ml-6 h-20" src="/logo1.png" alt="Not loaded">
+            <div class="bothcon flex flex-col">
+                <div class="first mb-2 mt-2">
+                    <ul class="flex space-x-6 justify-center tracking-wide">
+                        <li class="cursor-pointer bg-blue-800 text-white font-bold p-1">LOGIN</li>
+                        <li class="cursor-pointer">REGISTER</li>
+                        <li class="cursor-pointer">Agent LOGIN</li>
+                        <li class="cursor-pointer">CONTACT US</li>
+                        <li class="cursor-pointer">ASK DISHA</li>
+                        <li class="cursor-pointer">ALERTS</li>
+                        <li id="id1" class="cursor-pointer font-bold">Date/Time</li>
+
+                    </ul>
+                </div>
+                <div class="second mt-2 mb-2">
+                    <ul class="flex space-x-4 justify-center tracking-wide">
+                        <li class="cursor-pointer bg-blue-800 text-white font-bold p-1">IRCTC EXCLUSIVE</li>
+
+
+
+                        <!-- <li class="cursor-pointer">TRAINS</li> -->
+
+                        <li class="group relative dropdown cursor-pointer font-bold text-base uppercase tracking-wide">
+                            <a class="text-orange-400 font-bold underline">Trains</a>
+                            <div class="group-hover:block dropdown-menu absolute hidden h-auto w-96">
+
+                                <ul class="top-0 w-48 bg-white shadow px-1">
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">Book
+                                            Ticket</a></li>
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">Foreign
+                                            Tourist Booking</a></li>
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">Connecting
+                                            Journey Booking</a></li>
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">IRCTC
+                                            TRAINS</a></li>
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">Cancel
+                                            Ticket</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+
+
+                        <li class="cursor-pointer">BUSES</li>
+                        <li class="cursor-pointer">FLIGHTS</li>
+                        <li class="cursor-pointer">HOTELS</li>
+                        <li class="group relative dropdown cursor-pointer text-base uppercase tracking-wide">
+                            <a>HOLIDAYS</a>
+                            <div class="group-hover:block dropdown-menu absolute hidden h-auto w-96">
+
+                                <ul class="top-0 w-48 bg-white shadow px-1">
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">Tourist
+                                            Trains</a></li>
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">Tour
+                                            Packages</a></li>
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">Stays</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+                        <li class="group relative dropdown cursor-pointer text-base uppercase tracking-wide">
+                            <a>LOYALTY</a>
+                            <div class="group-hover:block dropdown-menu absolute hidden h-auto w-96">
+
+                                <ul class="top-0 w-48 bg-white shadow px-1">
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">IRCTC
+                                            SBI CREDIT CARD</a></li>
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">IRCTC
+                                            BOB CREDIT CARD</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+                        <li class="group relative dropdown cursor-pointer text-base uppercase tracking-wide">
+                            <a>MEALS</a>
+                            <div class="group-hover:block dropdown-menu absolute hidden h-auto w-96">
+
+                                <ul class="top-0 w-48 bg-white shadow px-1">
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">Order
+                                            Food E-Catering</a></li>
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">Book
+                                            Food - Pantry Card</a></li>
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">Cooked
+                                            Food Menu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+
+                        <li class="group relative dropdown cursor-pointer text-base uppercase tracking-wide">
+                            <a>PROMOTIONS</a>
+                            <div class="group-hover:block dropdown-menu absolute hidden h-auto w-96">
+
+                                <ul class="top-0 w-48 bg-white shadow px-1">
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">Advertise
+                                            with us</a></li>
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">IRCTC
+                                            Rail Connect App</a></li>
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">IRCTC
+                                            Toursim App</a></li>
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">IRCTC
+                                            Air App</a></li>
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">IRCTC
+                                            SBI Credit Card</a></li>
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">Trains
+                                            At a Glance</a></li>
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">Mahila
+                                            E-Haat</a></li>
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">Indian
+                                            Railway Magazines</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+
+
+
+                        <li class="cursor-pointer bg-blue-800 text-white font-bold p-1">PREMIUM PARTNERS</li>
+                    </ul>
+                </div>
+                <!-- <img src="/logo2.png" alt="Not loaded"> -->
+            </div>
+            <img class="mr-6 h-20" src="/logo2.png" alt="Not loaded">
+        </nav>
+    </div>
+    <main class="fun h-screen bg-pink-200">
+        <div class="parent flex justify-between bg-no-repeat bg-cover h-screen"
+            style="background-image:url('/train.jpg')">
+            <div class="leftsuperparent w-1/2">
+                <div class="left bg-white pl-8 m-16 flex flex-col pb-6">
+                    <div class="top flex">
+                        <img src="/flag.jpg" alt="not loaded">
+                        <span class="text-3xl text-blue-800 m-8">BOOK TICKET</span>
+                    </div>
+                    <div class="medium flex">
+                        <div class="medleft flex flex-col">
+                            <input id="searchbox1" class="border border-blue-800 p-2 m-2 rounded w-72" type="text" placeholder="From">
+
+                            <ul id="lst" class="group relative dropdown cursor-pointer text-base uppercase tracking-wide">
+                                <div class="input:block dropdown-menu absolute hidden h-auto w-96">
+
+                                <ul class="top-0 w-48 bg-white shadow px-1">
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">IRCTC
+                                            SBI CREDIT CARD</a></li>
+                                    <li class="py-1"><a
+                                            class="block font-bold text-base uppercase hover:bg-pink-100 cursor-pointer">IRCTC
+                                            BOB CREDIT CARD</a></li>
+                                </ul>
+                            </div>
+                            </ul>
+
+                            <input id="searchbox2" class="border border-blue-800 p-2 m-2 rounded" type="text" placeholder="To">
+                            <select class="border border-blue-800 p-2 m-2 rounded">
+                                <option class="ml-2">General</option>
+                                <option class="ml-2">Ladies</option>
+                                <option class="ml-2">Lower Berth</option>
+                                <option class="ml-2">Tatkal</option>
+                                <option class="ml-2">Premium</option>
+                                <option class="ml-2">Premium Tatkal</option>
+
+                            </select>
+                        </div>
+                        <div class="medright flex flex-col">
+
+
+
+                            <div class="relative mt-2 ml-2 rounded mb-2">
+                                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                  <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <input datepicker type="text" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date">
+                              </div>
+
+
+                            <select class="border border-blue-800 p-2 m-2 rounded">
+
+
+
+                                <option>All Classes</option>
+                                <option>AC First Class(1A)</option>
+                                <option>AC Second Tier</option>
+                                <option>AC Third Tier</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="botum">
+                        <div class="chkbox m-4">
+                            <input class="mr-1" type="checkbox">
+                            <label class="text-blue-800 font-bold mr-6">Person With Disability Concession</label>
+                            <input class="mr-1" type="checkbox">
+                            <label class="text-blue-800 font-bold">Flexible With Date</label><br>
+                            <input class="mr-1" type="checkbox">
+                            <label class="text-blue-800 font-bold mr-6">Train with Available Berth</label>
+                            <input class="mr-1" type="checkbox">
+                            <label class="text-blue-800 font-bold">Railway Pass Concession</label><br>
+                        </div>
+                        <div class="btn pl-2">
+                            <button
+                                class="srh text-white pl-8 pr-8 pt-2 pb-2 bg-orange-400 rounded w-32 font-bold hover:border-orange-500 hover:border-2">
+                                Search
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="sec bg-white ml-16 mr-16 -my-10 pl-8 pr-8 flex flex-col pb-6 pt-2">
+                    <p class="text-blue-800 font-bold mb-2"> New IRCTC launches ticket booking on ASK DISHA 2.0 Click
+                        here </p>
+                    <p class="text-blue-800 font-bold leading-4">Indian Railways have started provisioning of Linen in
+                        trains. Click here for the list of trains where Linen Services have been restarted as on date.
+                    </p>
+                </div>
+            </div>
+            <div class="right flex flex-col w-1/2 pt-72 pl-36">
+                <span class="text-white font-extrabold text-5xl ">INDIAN RAILWAYS</span>
+                <span class="text-white mt-4 text-xl pl-24">Safety|Security|Punctuality</span>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/index.js"></script>
+</html>
